@@ -1,8 +1,7 @@
-import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Star, ShoppingCart, Trash2 } from "lucide-react";
+import { Star, ShoppingCart } from "lucide-react";
 import { toast } from "sonner";
 
 interface ProductCardProps {
@@ -15,7 +14,7 @@ interface ProductCardProps {
   emoji: string;
   soundEffect: string;
   tags: string[];
-  animation?: string;
+  onAddToCart: () => void;
 }
 
 export const ProductCard = ({
@@ -28,22 +27,12 @@ export const ProductCard = ({
   emoji,
   soundEffect,
   tags,
-  animation = ""
+  onAddToCart
 }: ProductCardProps) => {
-  const [isAdded, setIsAdded] = useState(false);
-
   const handleAddToCart = () => {
-    setIsAdded(true);
+    onAddToCart();
     toast("🛒 Added to Cart!", {
       description: `${name} is now in your shopping cart!`,
-      duration: 3000,
-    });
-  };
-
-  const handleRemoveFromCart = () => {
-    setIsAdded(false);
-    toast("🗑️ Removed from Cart!", {
-      description: `${name} has been removed from your cart!`,
       duration: 2000,
     });
   };
@@ -56,7 +45,7 @@ export const ProductCard = ({
   };
 
   return (
-    <Card className={`product-card ${animation}`}>
+    <Card className="product-card">
       <CardHeader className="text-center pb-4">
         <div className="text-6xl mb-4">
           {emoji}
@@ -77,7 +66,7 @@ export const ProductCard = ({
 
       <CardContent className="space-y-4">
         <div className="text-center">
-          <div className="text-2xl font-bold text-neon mb-2">{price}</div>
+          <div className="text-2xl font-bold text-neon-purple">{price}</div>
           <div className="flex justify-center items-center gap-1 mb-3">
             {[...Array(5)].map((_, i) => (
               <Star
@@ -99,28 +88,18 @@ export const ProductCard = ({
         </div>
 
         <div className="flex gap-2">
-          {!isAdded ? (
-            <Button
-              onClick={handleAddToCart}
-              className="btn-cauldron flex-1"
-            >
-              <ShoppingCart className="w-4 h-4 mr-2" />
-              Add to Cart
-            </Button>
-          ) : (
-            <Button
-              onClick={handleRemoveFromCart}
-              className="btn-chaos flex-1"
-            >
-              <Trash2 className="w-4 h-4 mr-2" />
-              Remove from Cart
-            </Button>
-          )}
+          <Button
+            onClick={handleAddToCart}
+            className="btn-cart flex-1"
+          >
+            <ShoppingCart className="w-4 h-4 mr-2" />
+            ADD TO CART
+          </Button>
           
           <Button
             onClick={handleSoundPreview}
             size="sm"
-            className="btn-wizard px-3"
+            className="btn-sound px-3"
           >
             🔊
           </Button>

@@ -316,7 +316,306 @@ export const uselessProducts = [
     ],
     emoji: "🚪",
     soundEffect: "Constant subtle vibrating",
-    tags: ["Perpetual Motion", "Doorstop", "Physics-Defying", "Jiggling"],
-    animation: "float"
+    tags: ["Perpetual Motion", "Doorstop", "Physics-Defying", "Jiggling"]
+  },
+  {
+    id: "quantum-toothbrush",
+    name: "Quantum Toothbrush",
+    description: "Exists in multiple dimensions simultaneously. Cleans teeth that haven't been brushed yet.",
+    price: "$777.77",
+    rating: 5,
+    reviews: [
+      "My teeth are clean in parallel universes",
+      "Dentists hate this one weird trick",
+      "I think it created a dental paradox"
+    ],
+    emoji: "🪥",
+    soundEffect: "Quantum buzzing with interdimensional confusion",
+    tags: ["Quantum", "Dental", "Multiverse", "Paradox"]
+  },
+  {
+    id: "emotional-support-brick",
+    name: "Emotional Support Brick",
+    description: "A brick that judges your life choices. Comes with uncomfortable staring.",
+    price: "$99.99",
+    rating: 4,
+    reviews: [
+      "It doesn't say anything but I feel judged",
+      "Best therapist I've ever had",
+      "My self-esteem is now concrete"
+    ],
+    emoji: "🧱",
+    soundEffect: "Judgmental silence with heavy breathing",
+    tags: ["Emotional", "Support", "Judgmental", "Brick"]
+  },
+  {
+    id: "wifi-enabled-paperclip",
+    name: "Wi-Fi Enabled Paperclip",
+    description: "Connects to the internet but still just holds paper. Sends you notifications about paperwork.",
+    price: "$199.99",
+    rating: 2,
+    reviews: [
+      "Gets better Wi-Fi than my phone",
+      "Keeps notifying me about my unfinished taxes",
+      "My papers are now streaming in 4K"
+    ],
+    emoji: "📎",
+    soundEffect: "Wi-Fi connection sounds mixed with paper rustling",
+    tags: ["Wi-Fi", "Office", "Smart", "Paperclip"]
+  },
+  {
+    id: "backwards-calculator",
+    name: "Backwards Calculator",
+    description: "Shows you the question when you input the answer. Perfect for confusing math teachers.",
+    price: "$149.99",
+    rating: 3,
+    reviews: [
+      "I failed my math test but in a fun way",
+      "Now I know what 42 is the answer to",
+      "My homework does itself backwards"
+    ],
+    emoji: "🧮",
+    soundEffect: "Calculating sounds in reverse",
+    tags: ["Calculator", "Backwards", "Math", "Confusion"]
+  },
+  {
+    id: "self-hiding-keys",
+    name: "Self-Hiding Keys",
+    description: "Keys that hide themselves whenever you need them. Comes with permanent frustration.",
+    price: "$79.99",
+    rating: 1,
+    reviews: [
+      "I haven't found them since I bought them",
+      "Perfect for people who enjoy being locked out",
+      "My door is now a decoration"
+    ],
+    emoji: "🗝️",
+    soundEffect: "Jingling sounds getting progressively quieter",
+    tags: ["Keys", "Self-Hiding", "Frustration", "Lost"]
+  },
+  {
+    id: "noise-making-silence",
+    name: "Noise-Making Silence",
+    description: "Creates loud silence that drowns out regular silence. For when quiet isn't quiet enough.",
+    price: "$299.99",
+    rating: 4,
+    reviews: [
+      "The silence is deafeningly loud",
+      "Perfect for drowning out my thoughts",
+      "My neighbors complain about the silence"
+    ],
+    emoji: "🔇",
+    soundEffect: "Extremely loud nothing",
+    tags: ["Noise", "Silence", "Paradox", "Loud"]
+  },
+  {
+    id: "transparent-sunglasses",
+    name: "Transparent Sunglasses",
+    description: "Offers no sun protection while looking stylish. Perfect for nighttime sunbathing.",
+    price: "$199.99",
+    rating: 2,
+    reviews: [
+      "I got sunburned while wearing sunglasses",
+      "Great for pretending to be cool",
+      "My eyes are now as confused as my style"
+    ],
+    emoji: "🕶️",
+    soundEffect: "Stylish confusion",
+    tags: ["Sunglasses", "Transparent", "Fashion", "Useless"]
+  },
+  {
+    id: "digital-analog-clock",
+    name: "Digital Analog Clock",
+    description: "Shows digital time on analog hands. Maximizes confusion across all time formats.",
+    price: "$349.99",
+    rating: 3,
+    reviews: [
+      "I understand time less than before",
+      "Perfect for appointments I don't want to attend",
+      "My punctuality is now theoretically impossible"
+    ],
+    emoji: "⏰",
+    soundEffect: "Digital beeping with analog ticking",
+    tags: ["Clock", "Digital", "Analog", "Time Confusion"]
+  },
+  {
+    id: "self-emptying-cup",
+    name: "Self-Emptying Cup",
+    description: "Automatically empties itself whenever you try to drink. Stays perpetually clean.",
+    price: "$129.99",
+    rating: 2,
+    reviews: [
+      "I've been thirsty for weeks",
+      "Great for maintaining a liquid-free lifestyle",
+      "My coffee addiction is cured"
+    ],
+    emoji: "☕",
+    soundEffect: "Slurping sounds followed by disappointment",
+    tags: ["Cup", "Self-Emptying", "Thirst", "Clean"]
+  },
+  {
+    id: "fortune-telling-fish",
+    name: "Fortune-Telling Fish",
+    description: "Predicts your future but only tells you about yesterday. Accuracy not guaranteed.",
+    price: "$199.99",
+    rating: 4,
+    reviews: [
+      "It told me I had breakfast yesterday. It was right!",
+      "My past is now mysteriously predictable",
+      "Best fortune teller for people living backwards"
+    ],
+    emoji: "🐟",
+    soundEffect: "Mystical fish wisdom sounds",
+    tags: ["Fortune", "Fish", "Yesterday", "Prediction"]
+  },
+  {
+    id: "gravity-reversing-shoes",
+    name: "Gravity-Reversing Shoes",
+    description: "Makes you fall upwards. Ceiling damage not covered by warranty.",
+    price: "$899.99",
+    rating: 1,
+    reviews: [
+      "I'm stuck on my ceiling send help",
+      "Great for ceiling inspections",
+      "My floors are now decorative"
+    ],
+    emoji: "👟",
+    soundEffect: "Upward falling with ceiling impacts",
+    tags: ["Shoes", "Gravity", "Upward", "Ceiling Damage"]
+  },
+  {
+    id: "edible-bookmark",
+    name: "Edible Bookmark",
+    description: "Marks your page then disappears when you're hungry. Vanilla flavored regret.",
+    price: "$29.99",
+    rating: 3,
+    reviews: [
+      "I ate my homework in a whole new way",
+      "My book collection is now seasoned",
+      "Perfect for midnight reading snacks"
+    ],
+    emoji: "🔖",
+    soundEffect: "Crunching sounds with literary disappointment",
+    tags: ["Bookmark", "Edible", "Vanilla", "Regret"]
+  },
+  {
+    id: "backwards-doorbell",
+    name: "Backwards Doorbell",
+    description: "You have to ring it from inside to let people know you're home. Logic not included.",
+    price: "$179.99",
+    rating: 2,
+    reviews: [
+      "Visitors are confused, I'm trapped inside",
+      "Great for announcing your own presence to yourself",
+      "My door is now existentially questioning its purpose"
+    ],
+    emoji: "🔔",
+    soundEffect: "Inside-out ringing",
+    tags: ["Doorbell", "Backwards", "Logic", "Confusion"]
+  },
+  {
+    id: "silent-megaphone",
+    name: "Silent Megaphone",
+    description: "Amplifies silence to uncomfortable levels. Perfect for quiet protests.",
+    price: "$299.99",
+    rating: 4,
+    reviews: [
+      "My silence is now deafeningly loud",
+      "Great for miming emergencies",
+      "The neighbors complain about my quiet"
+    ],
+    emoji: "📢",
+    soundEffect: "Amplified nothing",
+    tags: ["Megaphone", "Silent", "Amplified", "Quiet Protest"]
+  },
+  {
+    id: "self-writing-eraser",
+    name: "Self-Writing Eraser",
+    description: "Erases things you haven't written yet. Prevents future mistakes with current confusion.",
+    price: "$149.99",
+    rating: 3,
+    reviews: [
+      "My homework disappeared before I started it",
+      "Great for proactive mistake prevention",
+      "I'm now confused about things I never thought"
+    ],
+    emoji: "✏️",
+    soundEffect: "Erasing sounds with temporal displacement",
+    tags: ["Eraser", "Self-Writing", "Future", "Prevention"]
+  },
+  {
+    id: "anti-magnetic-magnet",
+    name: "Anti-Magnetic Magnet",
+    description: "Repels everything including itself. Comes with existential crisis and floating anxiety.",
+    price: "$399.99",
+    rating: 5,
+    reviews: [
+      "It ran away from itself",
+      "My fridge is now magnet-free",
+      "Perfect for people who hate attraction"
+    ],
+    emoji: "🧲",
+    soundEffect: "Repelling confusion",
+    tags: ["Magnet", "Anti-Magnetic", "Repelling", "Existential"]
+  },
+  {
+    id: "circular-square",
+    name: "Circular Square",
+    description: "A square that's also a circle. Geometry teachers hate it. Physics isn't sure what to think.",
+    price: "$499.99",
+    rating: 4,
+    reviews: [
+      "My math homework achieved enlightenment",
+      "It broke my calculator and my understanding of reality",
+      "Perfect for confusing architects"
+    ],
+    emoji: "⬜",
+    soundEffect: "Geometric impossibility sounds",
+    tags: ["Geometry", "Impossible", "Square", "Circle"]
+  },
+  {
+    id: "self-untying-shoes",
+    name: "Self-Untying Shoes",
+    description: "Untie themselves every time you walk. Perfect for people who enjoy constant bending.",
+    price: "$259.99",
+    rating: 1,
+    reviews: [
+      "I've fallen 47 times today",
+      "Great workout for my back",
+      "My ankles are now permanently confused"
+    ],
+    emoji: "👟",
+    soundEffect: "Constant untying with frustrated sighs",
+    tags: ["Shoes", "Self-Untying", "Falling", "Exercise"]
+  },
+  {
+    id: "memory-foam-that-forgets",
+    name: "Memory Foam That Forgets",
+    description: "Remembers your shape for exactly 3 seconds then gets amnesia. Comes with therapy.",
+    price: "$599.99",
+    rating: 2,
+    reviews: [
+      "My bed doesn't recognize me anymore",
+      "Great for people who like starting fresh every night",
+      "I wake up confused about my own shape"
+    ],
+    emoji: "🛏️",
+    soundEffect: "Confused foam sounds",
+    tags: ["Memory Foam", "Forgetful", "Amnesia", "Therapy"]
+  },
+  {
+    id: "backwards-forward-button",
+    name: "Backwards Forward Button",
+    description: "Goes backwards when you want to go forward. Perfect for time-traveling regrets.",
+    price: "$89.99",
+    rating: 3,
+    reviews: [
+      "I'm living my life in reverse now",
+      "Great for undoing decisions I haven't made yet",
+      "My progress is now theoretical"
+    ],
+    emoji: "⏩",
+    soundEffect: "Confused directional beeping",
+    tags: ["Button", "Backwards", "Forward", "Time Travel"]
   }
 ];
