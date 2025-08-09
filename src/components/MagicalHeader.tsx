@@ -40,13 +40,13 @@ export const MagicalHeader = () => {
           {/* Main Title */}
           <div className="text-center space-y-2">
             <h1 className="text-cosmic text-4xl md:text-6xl font-bold sparkle">
-              🛒 The Most Useless Shop 🛒
+              ✨ WONDERLESS EMPORIUM ✨
             </h1>
             <p className="text-glow text-lg md:text-xl font-kalam">
-              In the Universe (and Beyond)
+              Premium Pointless Products Since Never
             </p>
             <div className="text-neon text-sm animate-pulse">
-              ✨ Where Logic Goes to Die ✨
+              🌟 Where Dreams Come to Disappoint 🌟
             </div>
           </div>
 
@@ -54,7 +54,7 @@ export const MagicalHeader = () => {
           <div className="flex flex-wrap gap-4 justify-center items-center">
             <Button className="btn-cauldron">
               <ShoppingCart className="w-4 h-4 mr-2" />
-              Cauldron ({cauldronCount})
+              Cart ({cauldronCount})
             </Button>
 
             <Button 

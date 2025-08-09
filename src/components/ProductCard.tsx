@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Star, Sparkles, Zap } from "lucide-react";
+import { Star, ShoppingCart, Trash2 } from "lucide-react";
 import { toast } from "sonner";
 
 interface ProductCardProps {
@@ -13,7 +13,6 @@ interface ProductCardProps {
   rating: number;
   reviews: string[];
   emoji: string;
-  hoverEffect: string;
   soundEffect: string;
   tags: string[];
   animation?: string;
@@ -27,23 +26,26 @@ export const ProductCard = ({
   rating,
   reviews,
   emoji,
-  hoverEffect,
   soundEffect,
   tags,
   animation = ""
 }: ProductCardProps) => {
-  const [isHovered, setIsHovered] = useState(false);
   const [isAdded, setIsAdded] = useState(false);
 
-  const handleAddToCauldron = () => {
+  const handleAddToCart = () => {
     setIsAdded(true);
-    toast("✨ Added to Cauldron! ✨", {
-      description: `${name} is now bubbling in your magical cauldron!`,
+    toast("🛒 Added to Cart!", {
+      description: `${name} is now in your shopping cart!`,
       duration: 3000,
     });
-    
-    // Reset after animation
-    setTimeout(() => setIsAdded(false), 1000);
+  };
+
+  const handleRemoveFromCart = () => {
+    setIsAdded(false);
+    toast("🗑️ Removed from Cart!", {
+      description: `${name} has been removed from your cart!`,
+      duration: 2000,
+    });
   };
 
   const handleSoundPreview = () => {
@@ -54,15 +56,9 @@ export const ProductCard = ({
   };
 
   return (
-    <Card 
-      className={`product-card ${animation}`}
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-    >
+    <Card className={`product-card ${animation}`}>
       <CardHeader className="text-center pb-4">
-        <div className={`text-6xl mb-4 transition-all duration-500 ${
-          isHovered ? 'scale-125 rotate-12' : ''
-        } ${id === 'black-hole' && isHovered ? 'animate-spin' : ''}`}>
+        <div className="text-6xl mb-4">
           {emoji}
         </div>
         <CardTitle className="text-cosmic text-xl">{name}</CardTitle>
@@ -103,23 +99,23 @@ export const ProductCard = ({
         </div>
 
         <div className="flex gap-2">
-          <Button
-            onClick={handleAddToCauldron}
-            className={`btn-cauldron flex-1 ${isAdded ? 'wobble' : ''}`}
-            disabled={isAdded}
-          >
-            {isAdded ? (
-              <>
-                <Sparkles className="w-4 h-4 mr-2 sparkle" />
-                Brewing!
-              </>
-            ) : (
-              <>
-                <Zap className="w-4 h-4 mr-2" />
-                Add to Cauldron
-              </>
-            )}
-          </Button>
+          {!isAdded ? (
+            <Button
+              onClick={handleAddToCart}
+              className="btn-cauldron flex-1"
+            >
+              <ShoppingCart className="w-4 h-4 mr-2" />
+              Add to Cart
+            </Button>
+          ) : (
+            <Button
+              onClick={handleRemoveFromCart}
+              className="btn-chaos flex-1"
+            >
+              <Trash2 className="w-4 h-4 mr-2" />
+              Remove from Cart
+            </Button>
+          )}
           
           <Button
             onClick={handleSoundPreview}
@@ -129,12 +125,6 @@ export const ProductCard = ({
             🔊
           </Button>
         </div>
-
-        {isHovered && (
-          <div className="text-center text-sm text-slime-green animate-pulse">
-            {hoverEffect}
-          </div>
-        )}
       </CardContent>
     </Card>
   );

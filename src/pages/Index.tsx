@@ -17,10 +17,10 @@ const Index = () => {
           <div className="absolute bottom-0 left-1/3 w-2 h-2 bg-glowing-pink rounded-full sparkle"></div>
           
           <h2 className="text-cosmic text-3xl md:text-4xl font-bold mb-4">
-            ✨ Featured Useless Items ✨
+            ✨ Premium Pointless Products ✨
           </h2>
           <p className="text-glow text-lg mb-6 font-kalam">
-            Hand-picked by our team of professional disappointment specialists
+            Curated by our team of professional disappointment specialists
           </p>
           
           <div className="text-neon text-sm animate-pulse mb-8">
@@ -57,12 +57,12 @@ const Index = () => {
           </div>
 
           <div className="text-muted-foreground text-xs space-y-2">
-            <p>© 2024 The Most Useless Shop in the Universe</p>
+            <p>© 2024 Wonderless Emporium</p>
             <p className="italic">
-              "We guarantee 100% uselessness or your confusion back!"
+              "We guarantee 100% pointlessness or your confusion back!"
             </p>
             <p className="text-neon text-xs animate-pulse">
-              ⚡ Powered by Pure Chaos Magic ⚡
+              ⚡ Premium Pointless Products Since Never ⚡
             </p>
           </div>
 

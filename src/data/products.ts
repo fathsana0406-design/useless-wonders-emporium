@@ -11,7 +11,6 @@ export const uselessProducts = [
       "It ate my homework. My teacher didn't believe me."
     ],
     emoji: "🕳️",
-    hoverEffect: "*Your cursor is being slowly consumed*",
     soundEffect: "Ominous humming with a hint of despair",
     tags: ["Cosmic", "Storage", "Existential Crisis"],
     animation: "glow-pulse"
@@ -28,7 +27,6 @@ export const uselessProducts = [
       "My signature is now as invisible as my self-esteem"
     ],
     emoji: "✨",
-    hoverEffect: "*Something glows mysteriously in the void*",
     soundEffect: "Complete and utter silence",
     tags: ["Invisible", "Writing", "Faith-Based"],
     animation: "sparkle"
@@ -45,7 +43,6 @@ export const uselessProducts = [
       "10/10 would confuse my grandma again."
     ],
     emoji: "⏰",
-    hoverEffect: "*Time slows down, but only for cutlery*",
     soundEffect: "Microwave beeps in slow motion",
     tags: ["Time Travel", "Kitchen", "Spoon-Specific"],
     animation: "float"
@@ -62,7 +59,6 @@ export const uselessProducts = [
       "Finally, a way to make my bad hair day worse!"
     ],
     emoji: "💧",
-    hoverEffect: "*Mysterious droplets appear everywhere*",
     soundEffect: "Backwards whooshing with confused seagulls",
     tags: ["Beauty", "Wet", "Backwards Logic"],
     animation: "wobble"
@@ -79,7 +75,6 @@ export const uselessProducts = [
       "My screws are now more confused than I am"
     ],
     emoji: "🔧",
-    hoverEffect: "*Spins in the wrong direction entirely*",
     soundEffect: "Confused mechanical clicking",
     tags: ["Tools", "Confusing", "Handedness Issues"],
     animation: "sparkle"
@@ -96,7 +91,6 @@ export const uselessProducts = [
       "Finally, a pet that understands my life choices"
     ],
     emoji: "🪨",
-    hoverEffect: "*Blinks slowly and sighs deeply*",
     soundEffect: "Digital sighing with WiFi connection sounds",
     tags: ["Digital", "Pet", "Depression", "WiFi"],
     animation: "glow-pulse"
@@ -113,7 +107,6 @@ export const uselessProducts = [
       "Kids love them. Pediatricians hate this one trick!"
     ],
     emoji: "🫧",
-    hoverEffect: "*Bubbles taste suspiciously like soap*",
     soundEffect: "Popping sounds with moral uncertainty",
     tags: ["Edible", "Questionable", "Citrus", "Bubbles"],
     animation: "float"
@@ -130,9 +123,200 @@ export const uselessProducts = [
       "Finally, a fire hazard that isn't actually hazardous!"
     ],
     emoji: "🕯️",
-    hoverEffect: "*Flickers digitally with purposelessness*",
     soundEffect: "USB connection sound followed by silence",
     tags: ["USB", "Digital", "Pointless", "Candle"],
     animation: "sparkle"
+  },
+  {
+    id: "transparent-mirror",
+    name: "Transparent Mirror",
+    description: "See right through yourself, literally. Great for existential crises and home decoration.",
+    price: "$159.99",
+    rating: 4,
+    reviews: [
+      "I can see my soul leaving my body",
+      "Perfect for vampires who want to pretend they have a reflection",
+      "My self-esteem is now as transparent as this mirror"
+    ],
+    emoji: "🪞",
+    soundEffect: "Glass breaking in reverse",
+    tags: ["Transparent", "Mirror", "Existential", "Home Decor"],
+    animation: "glow-pulse"
+  },
+  {
+    id: "gravity-defying-paperweight",
+    name: "Gravity-Defying Paperweight",
+    description: "Hovers 2 inches above your papers. Papers blow away freely underneath.",
+    price: "$299.99",
+    rating: 1,
+    reviews: [
+      "All my papers flew away. The paperweight just floated there mockingly",
+      "Great conversation starter about the futility of office supplies",
+      "My desk is now paper-free. Mission accomplished?"
+    ],
+    emoji: "📎",
+    soundEffect: "Mystical humming followed by paper rustling",
+    tags: ["Floating", "Office", "Anti-Functional", "Paperweight"],
+    animation: "float"
+  },
+  {
+    id: "backwards-clock",
+    name: "Backwards Clock",
+    description: "Counts time in reverse. Perfect for people who want to be early to everything by being late.",
+    price: "$199.99",
+    rating: 3,
+    reviews: [
+      "I'm now perpetually confused about what time it is",
+      "Great for time travelers from the future",
+      "My cat loves it. My boss does not."
+    ],
+    emoji: "🕒",
+    soundEffect: "Tick-tock but backwards",
+    tags: ["Time", "Backwards", "Confusing", "Clock"],
+    animation: "wobble"
+  },
+  {
+    id: "silent-alarm-clock",
+    name: "Silent Alarm Clock",
+    description: "Wakes you up with the sound of nothing. Guaranteed to make you late for everything.",
+    price: "$89.99",
+    rating: 2,
+    reviews: [
+      "I've been late to work for 3 months straight",
+      "Perfect for people who love disappointing others",
+      "My sleep schedule is now as broken as my dreams"
+    ],
+    emoji: "⏰",
+    soundEffect: "Deafening silence",
+    tags: ["Silent", "Alarm", "Late", "Sleep"],
+    animation: "sparkle"
+  },
+  {
+    id: "anti-gravity-shoes",
+    name: "Anti-Gravity Shoes",
+    description: "Make you float 1mm off the ground. Side effects include motion sickness and confused stares.",
+    price: "$599.99",
+    rating: 4,
+    reviews: [
+      "I'm technically floating but it feels like walking with extra steps",
+      "Great for avoiding stepping on cracks and my mother's back",
+      "My ankles hurt from the constant hovering"
+    ],
+    emoji: "👟",
+    soundEffect: "Subtle hovering buzz",
+    tags: ["Shoes", "Floating", "Fashion", "Barely Functional"],
+    animation: "float"
+  },
+  {
+    id: "edible-air",
+    name: "Premium Edible Air",
+    description: "Locally sourced air in various flavors. Now with 21% oxygen for enhanced breathing experience.",
+    price: "$25.99",
+    rating: 5,
+    reviews: [
+      "Tastes like... air. Which is exactly what I expected",
+      "Finally, a snack I can't overeat",
+      "My diet is now 100% air-based. Doctor is concerned."
+    ],
+    emoji: "💨",
+    soundEffect: "Gentle whooshing with hint of disappointment",
+    tags: ["Edible", "Air", "Diet", "Overpriced"],
+    animation: "sparkle"
+  },
+  {
+    id: "backward-umbrella",
+    name: "Backwards Umbrella",
+    description: "Collects rain instead of blocking it. Perfect for staying wet in style.",
+    price: "$79.99",
+    rating: 1,
+    reviews: [
+      "I'm wetter than before I used it",
+      "Great for watering plants while walking",
+      "My clothes are now permanently damp"
+    ],
+    emoji: "☂️",
+    soundEffect: "Rain collecting with soggy footsteps",
+    tags: ["Umbrella", "Backwards", "Wet", "Weather"],
+    animation: "wobble"
+  },
+  {
+    id: "invisible-chair",
+    name: "Invisible Chair",
+    description: "Sit on nothing and look confident doing it. Requires strong faith and stronger leg muscles.",
+    price: "$349.99",
+    rating: 3,
+    reviews: [
+      "My legs are now incredibly strong from constant squatting",
+      "Guests are confused when I offer them a seat",
+      "Perfect for invisible furniture collections"
+    ],
+    emoji: "🪑",
+    soundEffect: "Creaking sounds from an empty room",
+    tags: ["Invisible", "Furniture", "Exercise", "Faith-Based"],
+    animation: "float"
+  },
+  {
+    id: "self-stirring-empty-cup",
+    name: "Self-Stirring Empty Cup",
+    description: "Stirs nothing with great enthusiasm. Comes with built-in purposelessness.",
+    price: "$119.99",
+    rating: 4,
+    reviews: [
+      "It stirs the void in my soul",
+      "Great for pretending to be busy at meetings",
+      "The stirring sound is oddly therapeutic"
+    ],
+    emoji: "☕",
+    soundEffect: "Stirring sounds with existential undertones",
+    tags: ["Cup", "Self-Stirring", "Empty", "Therapeutic"],
+    animation: "glow-pulse"
+  },
+  {
+    id: "solar-powered-flashlight",
+    name: "Solar-Powered Flashlight",
+    description: "Only works in direct sunlight. Perfect for those sunny midnight emergencies.",
+    price: "$159.99",
+    rating: 2,
+    reviews: [
+      "Great for finding things during the day when I can already see them",
+      "Useless at night when I actually need it",
+      "My camping trips are now more confusing"
+    ],
+    emoji: "🔦",
+    soundEffect: "Clicking sounds followed by disappointment",
+    tags: ["Solar", "Flashlight", "Daylight Only", "Ironic"],
+    animation: "sparkle"
+  },
+  {
+    id: "noise-canceling-silence",
+    name: "Noise-Canceling Silence",
+    description: "Cancels out all noise, including the absence of noise. Creates a void of auditory confusion.",
+    price: "$299.99",
+    rating: 5,
+    reviews: [
+      "I can't hear anything, including my own thoughts",
+      "Perfect for meditation or complete sensory deprivation",
+      "My cat disappeared into the silence. Send help."
+    ],
+    emoji: "🔇",
+    soundEffect: "The sound of silence being silenced",
+    tags: ["Silence", "Noise Canceling", "Void", "Meditation"],
+    animation: "wobble"
+  },
+  {
+    id: "perpetual-motion-doorstop",
+    name: "Perpetual Motion Doorstop",
+    description: "Keeps moving forever while holding your door perfectly still. Physics professors hate it.",
+    price: "$449.99",
+    rating: 4,
+    reviews: [
+      "My door hasn't moved in months but the doorstop won't stop jiggling",
+      "Great conversation starter about thermodynamics",
+      "I think it's achieved consciousness"
+    ],
+    emoji: "🚪",
+    soundEffect: "Constant subtle vibrating",
+    tags: ["Perpetual Motion", "Doorstop", "Physics-Defying", "Jiggling"],
+    animation: "float"
   }
 ];
