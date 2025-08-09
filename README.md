@@ -1,73 +1,95 @@
-# Welcome to your Lovable project
+<img width="3188" height="1202" alt="frame (3)" src="https://github.com/user-attachments/assets/517ad8e9-ad22-457d-9538-a9e62d137cd7" />
 
-## Project info
 
-**URL**: https://lovable.dev/projects/bd3fd2f0-65f0-46c4-b0ea-0e9f978befba
+aadaya vilpana
 
-## How can I edit this code?
+## Basic Details
+### Team Name: [black knights]
 
-There are several ways of editing your application.
 
-**Use Lovable**
+### Team Members
+- Team Lead: [fathimathu sana] - [KUC MANGATTUPARAMBA]
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/bd3fd2f0-65f0-46c4-b0ea-0e9f978befba) and start prompting.
 
-Changes made via Lovable will be committed automatically to this repo.
+### Project Description
+aadaya vilpana, you can buy 
+### The Problem (that doesn't exist)
+nmgfds5kytdufdc
+### The Solution (that nobody asked for)
+[How are you solving it? Keep i;utt fun!]
 
-**Use your preferred IDE**
+## Technical Details
+### Technologies/Components Used
+For Software:
+- [Languages used]
+- [Frameworks used]
+- [Libraries used]
+- [Tools used]
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+For Hardware:
+- [List main components]
+- [List specifications]
+- [List tools required]
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Implementation
+For Software:
+# Installation
+[commands]
 
-Follow these steps:
+# Run
+[commands]
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### Project Documentation
+For Software:
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Screenshots (Add at least 3)
+![Screenshot1](Add screenshot 1 here with proper name)
+Add caption explaining what this shows
 
-# Step 3: Install the necessary dependencies.
-npm i
+![Screenshot2](Add screenshot 2 here with proper name)
+Add caption explaining what this shows
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+![Screenshot3](Add screenshot 3 here with proper name)
+Add caption explaining what this shows
 
-**Edit a file directly in GitHub**
+# Diagrams
+![Workflow](Add your workflow/architecture diagram here)
+Add caption explaining your workflow
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+For Hardware:
 
-**Use GitHub Codespaces**
+# Schematic & Circuit
+![Circuit](Add your circuit diagram here)
+Add caption explaining connections
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+![Schematic](Add your schematic diagram here)
+Add caption explaining the schematic
 
-## What technologies are used for this project?
+# Build Photos
+![Components](Add photo of your components here)
+List out all components shown
 
-This project is built with:
+![Build](Add photos of build process here)
+Explain the build steps
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+![Final](Add photo of final product here)
+Explain the final build
 
-## How can I deploy this project?
+### Project Demo
+# Video
+[Add your demo video link here]
+Explain what the video demonstrates
 
-Simply open [Lovable](https://lovable.dev/projects/bd3fd2f0-65f0-46c4-b0ea-0e9f978befba) and click on Share -> Publish.
+# Additional Demos
+[Add any extra demo materials/links]
 
-## Can I connect a custom domain to my Lovable project?
+## Team Contributions
+- [Name 1]: [Specific contributions]
+- [Name 2]: [Specific contributions]
+- [Name 3]: [Specific contributions]
 
-Yes, you can!
+---
+Made with ❤️ at TinkerHub Useless Projects 
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+![Static Badge](https://img.shields.io/badge/TinkerHub-24?color=%23000000&link=https%3A%2F%2Fwww.tinkerhub.org%2F)
+![Static Badge](https://img.shi  <
