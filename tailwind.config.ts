@@ -61,7 +61,18 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				'neon-purple': 'hsl(var(--neon-purple))',
+				'slime-green': 'hsl(var(--slime-green))',
+				'cosmic-black': 'hsl(var(--cosmic-black))',
+				'glowing-pink': 'hsl(var(--glowing-pink))',
+				'wizard-blue': 'hsl(var(--wizard-blue))',
+				'mystical-orange': 'hsl(var(--mystical-orange))'
+			},
+			fontFamily: {
+				'creepster': ['Creepster', 'cursive'],
+				'kalam': ['Kalam', 'cursive'],
+				'pixel': ['Press Start 2P', 'monospace']
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

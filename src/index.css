@@ -1,42 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Kalam:wght@400;700&family=Press+Start+2P&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* The Most Useless Shopping Site Design System - Magical Chaos Edition */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Cosmic background */
+    --background: 276 100% 3%;
+    --foreground: 315 100% 95%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    /* Magical cards */
+    --card: 280 50% 8%;
+    --card-foreground: 315 100% 95%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    /* Popover magic */
+    --popover: 280 50% 8%;
+    --popover-foreground: 315 100% 95%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Neon primary - Electric Purple */
+    --primary: 285 100% 60%;
+    --primary-foreground: 0 0% 0%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Slime secondary - Toxic Green */
+    --secondary: 120 100% 50%;
+    --secondary-foreground: 0 0% 0%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Cosmic muted */
+    --muted: 280 30% 15%;
+    --muted-foreground: 315 50% 70%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Glowing accent - Hot Pink */
+    --accent: 320 100% 65%;
+    --accent-foreground: 0 0% 0%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Destructive - Lava Red */
+    --destructive: 0 100% 60%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* Mystical borders */
+    --border: 285 50% 25%;
+    --input: 280 40% 12%;
+    --ring: 285 100% 60%;
 
-    --radius: 0.5rem;
+    /* Custom magical colors */
+    --neon-purple: 285 100% 60%;
+    --slime-green: 120 100% 50%;
+    --cosmic-black: 276 100% 3%;
+    --glowing-pink: 320 100% 65%;
+    --wizard-blue: 240 100% 70%;
+    --mystical-orange: 30 100% 60%;
+
+    /* Gradients */
+    --gradient-cosmic: linear-gradient(135deg, hsl(var(--cosmic-black)), hsl(285, 50%, 10%), hsl(var(--cosmic-black)));
+    --gradient-neon: linear-gradient(45deg, hsl(var(--neon-purple)), hsl(var(--glowing-pink)));
+    --gradient-slime: linear-gradient(90deg, hsl(var(--slime-green)), hsl(120, 80%, 40%));
+    --gradient-magic: linear-gradient(180deg, hsl(var(--wizard-blue)), hsl(var(--neon-purple)), hsl(var(--glowing-pink)));
+
+    /* Shadows and glows */
+    --glow-purple: 0 0 20px hsl(var(--neon-purple) / 0.5);
+    --glow-green: 0 0 20px hsl(var(--slime-green) / 0.5);
+    --glow-pink: 0 0 20px hsl(var(--glowing-pink) / 0.5);
+    --shadow-cosmic: 0 10px 30px hsl(var(--cosmic-black) / 0.8);
+
+    --radius: 1rem;
 
     --sidebar-background: 0 0% 98%;
 
@@ -101,5 +130,162 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    background: var(--gradient-cosmic);
+    min-height: 100vh;
+    font-family: 'Kalam', cursive;
+  }
+}
+
+@layer components {
+  /* Magical animations */
+  .sparkle {
+    animation: sparkle 2s infinite;
+  }
+
+  .float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .glow-pulse {
+    animation: glow-pulse 2s ease-in-out infinite alternate;
+  }
+
+  .wobble {
+    animation: wobble 0.5s ease-in-out;
+  }
+
+  .spin-eternal {
+    animation: spin 2s linear infinite;
+  }
+
+  /* Magical button variants */
+  .btn-cauldron {
+    background: var(--gradient-slime);
+    box-shadow: var(--glow-green);
+    border: 2px solid hsl(var(--slime-green));
+    font-family: 'Press Start 2P', monospace;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+  }
+
+  .btn-cauldron:hover {
+    transform: scale(1.1) rotate(2deg);
+    box-shadow: var(--glow-green), 0 0 40px hsl(var(--slime-green) / 0.8);
+  }
+
+  .btn-wizard {
+    background: var(--gradient-magic);
+    box-shadow: var(--glow-purple);
+    border: 2px solid hsl(var(--neon-purple));
+    font-family: 'Creepster', cursive;
+    transition: all 0.3s ease;
+  }
+
+  .btn-wizard:hover {
+    transform: scale(1.05) rotate(-1deg);
+    box-shadow: var(--glow-purple), 0 0 30px hsl(var(--neon-purple) / 0.6);
+  }
+
+  .btn-chaos {
+    background: var(--gradient-neon);
+    box-shadow: var(--glow-pink);
+    border: 2px solid hsl(var(--glowing-pink));
+    font-family: 'Kalam', cursive;
+    font-weight: 700;
+    transition: all 0.3s ease;
+  }
+
+  .btn-chaos:hover {
+    transform: scale(1.08) rotate(3deg);
+    box-shadow: var(--glow-pink), 0 0 35px hsl(var(--glowing-pink) / 0.7);
+  }
+
+  /* Product card magic */
+  .product-card {
+    background: linear-gradient(145deg, hsl(var(--card)), hsl(280, 40%, 12%));
+    border: 2px solid hsl(var(--border));
+    box-shadow: var(--shadow-cosmic);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .product-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, transparent, hsl(var(--neon-purple) / 0.1), transparent);
+    transform: rotate(45deg);
+    transition: all 0.6s;
+    opacity: 0;
+  }
+
+  .product-card:hover::before {
+    animation: shine 0.6s ease-in-out;
+  }
+
+  .product-card:hover {
+    transform: translateY(-8px) rotate(1deg);
+    box-shadow: var(--shadow-cosmic), var(--glow-purple);
+    border-color: hsl(var(--neon-purple));
+  }
+
+  /* Mystical text styles */
+  .text-cosmic {
+    background: var(--gradient-magic);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-family: 'Creepster', cursive;
+  }
+
+  .text-neon {
+    color: hsl(var(--neon-purple));
+    text-shadow: 0 0 10px hsl(var(--neon-purple) / 0.8);
+    font-family: 'Press Start 2P', monospace;
+  }
+
+  .text-slime {
+    color: hsl(var(--slime-green));
+    text-shadow: 0 0 8px hsl(var(--slime-green) / 0.6);
+  }
+
+  .text-glow {
+    color: hsl(var(--glowing-pink));
+    text-shadow: 0 0 12px hsl(var(--glowing-pink) / 0.9);
+  }
+}
+
+@layer utilities {
+  /* Keyframe animations */
+  @keyframes sparkle {
+    0%, 100% { transform: scale(1) rotate(0deg); opacity: 1; }
+    50% { transform: scale(1.2) rotate(180deg); opacity: 0.8; }
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+
+  @keyframes glow-pulse {
+    0% { box-shadow: 0 0 5px hsl(var(--neon-purple) / 0.5); }
+    100% { box-shadow: 0 0 20px hsl(var(--neon-purple) / 0.8), 0 0 30px hsl(var(--glowing-pink) / 0.4); }
+  }
+
+  @keyframes wobble {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(-3deg); }
+    75% { transform: rotate(3deg); }
+  }
+
+  @keyframes shine {
+    0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); opacity: 0; }
+    50% { opacity: 1; }
+    100% { transform: translateX(100%) translateY(100%) rotate(45deg); opacity: 0; }
   }
 }
